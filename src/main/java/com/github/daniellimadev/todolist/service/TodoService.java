@@ -1,6 +1,7 @@
 package com.github.daniellimadev.todolist.service;
 
 import com.github.daniellimadev.todolist.entity.Todo;
+import com.github.daniellimadev.todolist.exception.BadRequestException;
 import com.github.daniellimadev.todolist.repository.TodoRepository;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
@@ -33,7 +34,7 @@ public class TodoService {
             todo.setId(id);
             todoRepository.save(todo);
         }, () -> {
-
+            throw new BadRequestException("Todo %d does not exist! ".formatted(id));
         });
 
         return list();
@@ -42,7 +43,7 @@ public class TodoService {
 
     public List<Todo> delete(Long id) {
         todoRepository.findById(id).ifPresentOrElse((existingTodo) -> todoRepository.delete(existingTodo), () -> {
-
+            throw new BadRequestException("Todo %d does not exist! ".formatted(id));
         });
         return list();
     }
