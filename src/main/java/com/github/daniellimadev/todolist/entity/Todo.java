@@ -1,13 +1,15 @@
 package com.github.daniellimadev.todolist.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "todos")
-@Getter
-@Setter
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Todo {
 
     @Id
@@ -21,6 +23,5 @@ public class Todo {
     private boolean accomplished;
 
     private int priority;
-
 
 }
