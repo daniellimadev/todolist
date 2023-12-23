@@ -59,13 +59,12 @@ To make the HTTP requests below, the tool [Postman](https://www.postman.com/) wa
 $ http POST :8080/all name="Todo 1" description="Desc Todo 1" priority=1
 
 [
-  {
-    "description": "Desc Entire 1",
-    "id": 1,
-    "name": "Todo 1",
-    "priority": 1,
-    "realized": false
-  }
+ 
+  "name": "string",
+  "description": "string",
+  "accomplished": true,
+  "priority": 0
+}
 ]
 ```
 
@@ -75,11 +74,11 @@ $ http GET :8080/all
 
 [
   {
-    "description": "Desc Entire 1",
-    "id": 1,
-    "name": "Todo 1",
-    "priority": 1,
-    "realized": false
+    "id": 0,
+    "name": "string",
+    "description": "string",
+    "accomplished": true,
+    "priority": 0
   }
 ]
 ```
@@ -90,12 +89,12 @@ $ http PUT :8080/todos/1 name="Todo 1 Up" description="Desc Todo 1 Up" priority=
 
 [
   {
-    "description": "Desc Entire 1 Up",
-    "id": 1,
-    "name": "Todo 1 Up",
-    "priority": 2,
-    "realized": false
-  }
+   "id": 0,
+   "name": "string",
+   "description": "string",
+   "accomplished": true,
+   "priority": 0
+}
 ]
 ```
 
