@@ -64,7 +64,7 @@ $ http POST :8080/all name="Todo 1" description="Desc Todo 1" priority=1
   "description": "string",
   "accomplished": true,
   "priority": 0
-}
+ }
 ]
 ```
 
@@ -94,7 +94,7 @@ $ http PUT :8080/todos/1 name="Todo 1 Up" description="Desc Todo 1 Up" priority=
    "description": "string",
    "accomplished": true,
    "priority": 0
-}
+  }
 ]
 ```
 
