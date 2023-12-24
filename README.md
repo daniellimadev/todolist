@@ -59,7 +59,7 @@ To make the HTTP requests below, the tool [Postman](https://www.postman.com/) wa
 $ http POST :8080/all name="Todo 1" description="Desc Todo 1" priority=1
 
 [
- 
+ {
   "name": "string",
   "description": "string",
   "accomplished": true,
