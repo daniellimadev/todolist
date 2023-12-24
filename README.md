@@ -22,9 +22,15 @@ Code
 
 ![code](https://github.com/daniellimadev/todolist/blob/main/img/code.png)
 
+
 Swagger ui
 
 ![swagger ui](https://github.com/daniellimadev/todolist/blob/main/img/swagger%20ui.png)
+
+
+Doing unit testing
+
+![Doing unit testing](https://github.com/daniellimadev/todolist/blob/main/img/Doing%20unit%20testing.png)
 
 ## Practices adopted
 
