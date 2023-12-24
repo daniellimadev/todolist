@@ -56,21 +56,21 @@ To make the HTTP requests below, the tool [Postman](https://www.postman.com/) wa
 
 - Create Task
 ```
-$ http POST :8080/all name="Todo 1" description="Desc Todo 1" priority=1
+$ POST http://localhost:8080/todos
 
 [
- {
-  "name": "string",
-  "description": "string",
-  "accomplished": true,
-  "priority": 0
- }
+  {
+    "name": "stringsss",
+    "description": "string",
+    "accomplished": 2,
+    "priority": 0
+  }
 ]
 ```
 
 - List Tasks
 ```
-$ http GET :8080/all
+$ GET http://localhost:8080/todos
 
 [
   {
@@ -85,22 +85,21 @@ $ http GET :8080/all
 
 - Update Task
 ```
-$ http PUT :8080/todos/1 name="Todo 1 Up" description="Desc Todo 1 Up" priority=2
+$ PUT http://localhost:8080/todos/{id}
 
 [
   {
-   "id": 0,
-   "name": "string",
-   "description": "string",
-   "accomplished": true,
-   "priority": 0
+    "name": "stringsss",
+    "description": "string",
+    "accomplished": 2,
+    "priority": 0
   }
 ]
 ```
 
 - Remove Task
 ```
-http DELETE :8080/todos/1
+DELETE http://localhost:8080/todos/{id}
 
 [ ]
 ```
